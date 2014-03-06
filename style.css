@@ -1,0 +1,27 @@
+.noactive{
+	display: none;
+}
+
+.active {
+	display: inline-block;
+}
+
+.convertor {
+	width: 320px;
+	margin: 5px auto;
+}
+
+#start_convert, #restart_convert {
+	width: 150px;
+	border: 1px solid rgb(0,0,0);
+	padding: 5px;
+	cursor: pointer;
+}
+
+#start_convert:hover, #restart_convert:hover {
+	border: 1px solid rgb(255,0,0);
+}
+
+#start_convert:active, #restart_convert:active {
+	border: 1px solid rgb(0,255,0);
+}
