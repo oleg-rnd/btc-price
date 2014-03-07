@@ -7,7 +7,7 @@ For Exchange BTC-E.com it will vp-btce.php, for Bitstamp.com - vp-bitstamp.php, 
 Configure script replacement file scrypt.js - list the original currency of your website (ie the one, that it is necessary to recalculate in bitcoin, line 19), exchange (line 20), and the update interval (line 22) in milliseconds.
    - Fed up of the dollar can be counted on bitcoin rate BTC-E or Bitstamp.
    - Euro is considered on the basis of the internal rate Fed Dollar / euro at the exchange Bitstamp.
-   - Yuan translated at exchange Kusu Huobi.
+   - Yuan translated at exchange Huobi.
 
 In the page code, which must be done counting, place the contents of this file (scrypt.js) Right after the first tag <body>.
 
