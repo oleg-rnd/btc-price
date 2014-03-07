@@ -1,4 +1,4 @@
-Download the archive script (there will be some files: 3 php-file to parse the exchange rate from the exchanges (BTC-E, Bitstamp, Huobi), 
+Download the archive (there will be some files: 3 php-file to parse the exchange rate from the exchanges (BTC-E, Bitstamp, Huobi), 
 js script, CSS file, and this manual).
 
 Select the source of exchange (ie - exchange) and download the appropriate file parser quotations in the root folder of your site. 
