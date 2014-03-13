@@ -73,7 +73,7 @@ else
 ?>
 
 <?php
-$_POST["valute"] = "usd";
+//$_POST["valute"] = "usd";
 $result = vparser($_POST["valute"]);
 /*  Конвертер валют  */
 	switch ($_POST["valute"]) {
@@ -85,6 +85,9 @@ $result = vparser($_POST["valute"]);
 		break;
 	case "eur":
 		$kotirovka = $result["rur_btc_sale"]/$result["eur_sale_sb"];
+		break;
+	case "cny":
+		$kotirovka = $result["cny_btc_sale"];
 		break;
 	default:
 		$kotirovka = 1;
