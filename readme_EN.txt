@@ -1,13 +1,19 @@
-Download the archive (there will be some files: 3 php-file to parse the exchange rate from the exchanges (BTC-E, Bitstamp, Huobi), 
+BTC-price.org - a universal service that was created to ensure that would help indicate Bitcoin price in almost any site online . The script , which you can download here , and install on your site automatically recalculates the euro or dollar Fed in Bitcoin with a predetermined interval you specify on the course leading exchanges to choose from.
+
+Download the archive script (there will be some files: 3 php-file to parse the exchange rate from the exchanges (BTC-E, Bitstamp, Huobi), 
 js script, CSS file, and this manual).
 
 Select the source of exchange (ie - exchange) and download the appropriate file parser quotations in the root folder of your site. 
 For Exchange BTC-E.com it will vp-btce.php, for Bitstamp.com - vp-bitstamp.php, vp-huobi.php for Huobi.com.
 
-Configure script replacement file scrypt.js - list the original currency of your website (ie the one, that it is necessary to recalculate in bitcoin, line 19), exchange (line 20), and the update interval (line 22) in milliseconds.
-   - Fed up of the dollar can be counted on bitcoin rate BTC-E or Bitstamp.
-   - Euro is considered on the basis of the internal rate Fed Dollar / euro at the exchange Bitstamp.
-   - Yuan translated at exchange Huobi.
+Configure script of replacement - file scrypt.js (you help - comments in the code - they are after the double slash (/ / ) in each desired row ).
+Line 19 - list the source of your site currency (ie the currency of which it is necessary to recalculate in bitcoin).
+Line 20 - Set Exchange (or rather - a link to the file Purser Exchange. For reliability, you can specify an absolute path, for example : var url_parser = "http://yoursite.org/vp-btce.php", instead : var url_parser = "vp -btce.php ".
+Note that :
+- Fed up of the dollar in bitcoin prices can be translated at BTC-E or Bitstamp.
+- Euro is considered on the basis of the internal rate Fed Dollar / euro at the exchange Bitstamp.
+- Yuan translated at exchange Kusu Huobi.
+Refresh interval data in milliseconds - specified in row 22.
 
 In the page code, which must be done counting, place the contents of this file (scrypt.js) Right after the first tag <body>.
 
@@ -32,9 +38,9 @@ you can assign the correct class in the script, line 23 of the source file scryp
 
 
 That would take into account the additional costs inherent in conversion (input and output) rates, add the appropriate amount of additional cost coefficient in the 12 line of the file scrypt.js
-(10% - 1.1 is 20% - is 1.2, etc.)
+(10% - 1.1 is 20% - is 1.2, etc.):
 was: new_val = (old_val / kotirovka). toFixed (4);
-was: new_val = (old_val / kotirovka * 1.1). toFixed (4);
+become: new_val = (old_val / kotirovka * 1.1). toFixed (4);
 
 IMPORTANT: The script assumes informational purposes only! Check the exchange rate at the final transactions!
 The sources of data for parsing, which uses a script to change, which can make the script incorrect!
