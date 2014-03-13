@@ -16,12 +16,12 @@ $('.'+name_class).each(function () {
 });
 };	 
 $(document).ready(function(){
-var page_valute = "usd"; // начальная валюта на странице (usd, eur, rur, cny)
-var url_parser = "vp-btce.php"; // парсер для получения котировок (выбор биржи)
+var page_valute = "eur"; // initial currency on the page - начальная валюта на странице (usd, eur, rur, cny)
+var url_parser = "vp-btce.php"; // link to the parser for quotations (choice of the exchange) - ссылка на парсер для получения котировок (выбор биржи)
 //var url_parser = "vp-bitstamp.php";
 //var url_parser = "vp-huobi.php";
-var name_class = "price"; // класс контейнера с ценой
-var time_int = 20000; // значение интервала между запусками (мс)
+var name_class = "price"; // container class with a price - класс контейнеров с ценой
+var time_int = 5000; // interval between runs (ms) - значение интервала между запусками (мс)
 
 $('.'+name_class).after(function(index){
     return '<span class="btc_price noactive"></span>';
