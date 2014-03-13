@@ -6,11 +6,6 @@
 	display: inline-block;
 }
 
-.convertor {
-	width: 320px;
-	margin: 5px auto;
-}
-
 #start_convert, #restart_convert {
 	width: 150px;
 	border: 1px solid rgb(0,0,0);
