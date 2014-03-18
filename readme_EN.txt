@@ -7,13 +7,13 @@ Select the source of exchange (ie - exchange) and download the appropriate file 
 For Exchange BTC-E.com it will vp-btce.php, for Bitstamp.com - vp-bitstamp.php, vp-huobi.php for Huobi.com.
 
 Configure script of replacement - file scrypt.js (you help - comments in the code - they are after the double slash (/ / ) in each desired row ).
-Line 19 - list the source of your site currency (ie the currency of which it is necessary to recalculate in bitcoin).
-Line 20 - Set Exchange (or rather - a link to the file Purser Exchange. For reliability, you can specify an absolute path, for example : var url_parser = "http://yoursite.org/vp-btce.php", instead : var url_parser = "vp -btce.php ".
-Note that :
+Line 26 - list the source of your site currency (ie the currency of which it is necessary to recalculate in bitcoin).
+Line 29 - Set Exchange (or rather - a link to the file Purser Exchange. For reliability, you can specify an absolute path, for example : var url_parser = "http://yoursite.org/vp-btce.php", instead : var url_parser = "vp -btce.php ". Note that :
 - Fed up of the dollar in bitcoin prices can be translated at BTC-E or Bitstamp.
 - Euro is considered on the basis of the internal rate Fed Dollar / euro at the exchange Bitstamp.
-- Yuan translated at exchange Kusu Huobi.
-Refresh interval data in milliseconds - specified in row 22.
+- Yuan translated at Huobi exchange.
+In line 30 the name of the object class is defined, where the price will be changed. Refresh interval data in milliseconds - specified in row 31.
+Line 32 allows you to run automatically recalculated in bitcoin. If var auto_run = true; (and not "false") prices will pereschityvatsya in bitcoin immediately with the download page.
 
 In the page code, which must be done counting, place the contents of this file (scrypt.js) Right after the first tag <body>.
 
