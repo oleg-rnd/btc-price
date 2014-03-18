@@ -37,6 +37,7 @@ else
 	$result["cny_btc_sale"] = trim(str_replace(",", ".", $buffer["sells"][0]["price"]));
 };
 $buffer = "";
+if($valute != "cny") {
 // Перевод юаней в рубли и затем в доллары
 $currency_cbr = currency_cbr_get_rates("CNY");
 $result["rur_btc_sale"] = $result["cny_btc_sale"]*$currency_cbr["CNY"]/$currency_cbr["Nominal"];
@@ -65,6 +66,7 @@ if($valute != "rur") {
 	};
 $buffer = "";	
 }; 
+};
 if(empty($error))
 	return $result;
 else
